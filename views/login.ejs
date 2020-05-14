@@ -1,0 +1,27 @@
+<%- include ("partials/header") %>
+
+<div class="row mt-5 ">
+	<div class="col-md-12">
+		<h1>Please Sign In</h1>
+	</div>
+	<div class="div-form">
+		<form action='/login' method='POST' class="form-signin">
+			<div class="form-label-group">
+				<input type="text" name="username" id="inputUsername" class="form-control" placeholder="Username" required autofocus>
+				<label for="inputUsername">Username</label>
+			</div>
+			<div class="form-label-group">
+				<input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
+				<label for="inputPassword">Password</label>
+			</div>
+			<div class="form-group">
+				<button class="btn btn-outline-dark btn-block btn-lg">Login</button>
+			</div>
+		</form>
+		<div class="form-signin">
+			<a href="/campgrounds">Go Back</a>
+		</div>
+	</div>
+</div>
+
+<%- include ("partials/footer") %>
